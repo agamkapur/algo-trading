@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  binance:
+    build: ./exchanges/binance
+    container_name: binance-connector
+    restart: unless-stopped
+
+  bybit:
+    build: ./exchanges/bybit
+    container_name: bybit-connector
+    restart: unless-stopped
+
+  coinbase:
+    build: ./exchanges/coinbase-exchange
+    container_name: coinbase-connector
+    restart: unless-stopped
+
+  okx:
+    build: ./exchanges/okx
+    container_name: okx-connector
+    restart: unless-stopped
+
+  upbit:
+    build: ./exchanges/upbit
+    container_name: upbit-connector
+    restart: unless-stopped
+
+  kraken:
+    build: ./exchanges/kraken
+    container_name: kraken-connector
+    restart: unless-stopped
+
+  kucoin:
+    build: ./exchanges/kucoin
+    container_name: kucoin-connector
+    restart: unless-stopped
+
+  gate:
+    build: ./exchanges/gate
+    container_name: gate-connector
+    restart: unless-stopped
+
+  bitget:
+    build: ./exchanges/bitget
+    container_name: bitget-connector
+    restart: unless-stopped
+
+  htx:
+    build: ./exchanges/htx
+    container_name: htx-connector
+    restart: unless-stopped
+
+  crypto-com:
+    build: ./exchanges/crypto-dot-com-exchange
+    container_name: crypto-com-connector
+    restart: unless-stopped
+
+  mexc:
+    build: ./exchanges/mexc
+    container_name: mexc-connector
+    restart: unless-stopped
+
+  bingx:
+    build: ./exchanges/bingx
+    container_name: bingx-connector
+    restart: unless-stopped
+
+  bitfinex:
+    build: ./exchanges/bitfinex
+    container_name: bitfinex-connector
+    restart: unless-stopped
